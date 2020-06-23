@@ -2700,9 +2700,9 @@ while True:
 						bossFlag0[i] = False
 						bossMungFlag[i] = False
 						bossMungCnt[i] = 0
-						await client.get_channel(channel).send('`' + bossData[i][0] + '(이)가 삭제되었습니다.`', tts=False)
+						await client.get_channel(channel).send('<' + bossData[i][0] + '이(가) 삭제되었습니다.', tts=False)
 						await dbSave()
-						print ('`' + bossData[i][0] + '(이)가 삭제되었습니다.`)
+						print (' ' + bossData[i][0] + '이(가) 삭제되었습니다.')
 					
 					################ 보스별 메모 ################ 
 
